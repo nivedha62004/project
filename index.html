@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison Website</title>
+</head>
+<body>
+   <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #343a40;
+            font-size: 2.8rem;
+            margin-top: 20px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .search-bar {
+            width: 320px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .category-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .category {
+            background-color: #ffffff;
+            border-radius: 10px;
+            border: 2px solid;  
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding: 20px;
+        }
+        .category img {
+            width: 250px;
+            height: 250px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .category div {
+            font-size: 18px;
+            font-weight: bold;
+            color: #495057;
+            margin-top: 10px;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        footer {
+            text-align: center;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 15px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ffc107;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Price Comparison Website</h1>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 8s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        .controls {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+        .controls button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/3a7ea336e89148f6.jpeg?q=20" alt="Slide 1">
+            <img src="https://images-static.nykaa.com/creatives/2060b3cb-618f-4f4d-83d8-74e8e4497e9d/default.jpg?tr=cm-pad_resize,w-900" alt="Slide 2">
+            <img src="https://images-static.nykaa.com/uploads/0a9e84d4-214f-4be7-ba6e-4b7ba56039d6.jpg?tr=cm-pad_resize,w-1800" alt="Slide 3">
+            <img src="https://images-static.nykaa.com/uploads/40c8f669-3cb1-48c7-ac1a-9510839c442c.jpg?tr=cm-pad_resize,w-1800" alt="Slide 4">
+            <img scr="https://images-static.nykaa.com/creatives/e412454c-b9f7-4c0d-a1c6-6f486c74c8f5/default.jpg?tr=cm-pad_resize,w-900" alt="Slide 5">
+        </div>
+    </div>
+    <div class="search-container">
+        <select class="search-bar">
+            <option value="">Search</option>
+            <option value="women">Women</option>
+            <option value="men">Men</option>
+            <option value="bracelet">kids</option>
+            <option value="kids">cosmetics</option>
+           <option value="phone">Phone</option>
+           <option value="phone">furniture</option>
+        </select>
+    </div>
+    
+    <div class="category-container">
+        <!-- Row 1 -->
+        <div class="category">
+            <img src="https://m.media-amazon.com/images/G/31/img2020/fashion/WA_2020/GIF24/westhalo/noshadow/Tops_._SS400_QL85_FMpng_.png" alt="Women">
+            <div>Women cloths</div>
+        </div>
+        <div class="category">
+            <img src="https://m.media-amazon.com/images/G/31/img24/Fashion/AF/BAU/Winterflip/Rec/ShopMen/Pc/SBC_2._CB544052119_.png" " alt="Men">
+            <div>Men cloths</div>
+        </div>
+        <!-- Row 2 -->
+        <div class="category">
+            <img src="https://m.media-amazon.com/images/I/71dVrYFYn6L._SX679_.jpg"alt="KIDS"><div>KIDS</div>
+        </div>
+        <div class="category">
+            <img src="https://m.media-amazon.com/images/I/71TtkiOaU7L._SX522_.jpg" alt="cosmetics">
+            <div>COSMETICS</div>
+        </div>
+        <!-- Row 3 -->
+        <div class="category">
+            <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/03fe7656-c60f-41e8-b064-cbecd6a653bb._CR0,0,1200,628_SX430_QL72_.jpg" alt="Phone">
+            <div>PHONE</div>
+        </div>
+        <div class="category">
+            <img src="https://m.media-amazon.com/images/I/61IHi71wKNL._SX679_.jpg" alt="furniture">
+            <div>FURNITURES</div>
+        </div>
+    </div>
+</body>
+</html>
