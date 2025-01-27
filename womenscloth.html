@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Price Comparison</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: pink;
+            color: purple;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #4B0033;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300x250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .product-prices {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .product-prices span:first-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .product-prices span:last-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .compare-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        .compare-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            background: #33CC33;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .compare-links a:hover {
+            background: pink;
+        }
+
+        footer {
+            text-align: center;
+            background: pink;
+            color: #C51077;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-prices span {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dress Price Comparison: Amazon vs Flipkart</h1>
+    </header>
+    <div class="container">
+        <h2>Compare the Best Dresses</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81hEjjykoOL._SX569_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Floral Summer Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹799</span>
+                        <span>Flipkart: ₹999</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/c1BzCPl" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/divastri-women-kurta-palazzo-dupatta-set/p/itm124e8ef9dfa78?pid=ETHH5GCTVYWWFQTB&lid=LSTETHH5GCTVYWWFQTBULFRNP&marketplace=FLIPKART&q=GoSriKi+Womens+Rayon+Blend+Anarkali+Printed+Kurta+with+Palazzo+%26+Dupatta&store=clo%2Fcfv%2Fitg%2Ftys&srno=s_2_41&otracker=search&otracker1=search&fm=Search&iid=en_CToY1hubpKxsGF9aGcVmmMxagfn2ht2DJVQ3kL5goSsESUYB6OiGDiuYqt-Zi8jIBnnr6arVUgrvF7lEyuvlVw%3D%3D&ppt=sp&ppn=sp&ssid=uggdtcwso00000001735541985635&qH=0e0d4a171c262a83" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61+zO6fqO5L._SX679_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>Elegant Evening Gown</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹405</span>
+                        <span>Flipkart: ₹649</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/1z5U12E" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/rh-creation-anarkali-gown/p/itm914276139ee93?pid=GWNGZ6RGNJMESEHA&lid=LSTGWNGZ6RGNJMESEHAYQ7YPX&marketplace=FLIPKART&q=Elegant+Evening+Gown&store=clo%2Fodx%2Fod7%2F0xx&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=9c8e6573-b003-4236-8956-b3bd767a204c.GWNGZ6RGNJMESEHA.SEARCH&ppt=sp&ppn=sp&ssid=ge661gs3cw0000001736231088821&qH=3ee20f111d01a918" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61igGfjojlL._SY741_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3>Casual Day Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹499</span>
+                        <span>Flipkart: ₹459</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/jhIrWkK" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/pinktribe-women-dyed-ombre-casual-blue-shirt/p/itm03da8091c9043?pid=SHTH4N6F9TWZKNBD&lid=LSTSHTH4N6F9TWZKNBDWJGXNZ&marketplace=FLIPKART&q=Maaesa%20Tie-Dye%20Rayon%20Loose%20Fit%20Formal/Casual%20Loosefit%20Shirts&sattr[]=color&st=color" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61-COg8J9RL._SY741_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Formal Office Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹2,267</span>
+                        <span>Flipkart: ₹1,729</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/0FEJYZf" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/libas-women-kurta-churidar-dupatta-set/p/itm71e74c8f82797?pid=ETHGGZ2GYVCQJYY4&lid=LSTETHGGZ2GYVCQJYY47KHLPE&marketplace=FLIPKART&q=Libas+Women+Kurta+Sets&store=clo%2Fcfv%2Fitg%2Ftys&srno=s_2_78&otracker=search&otracker1=search&fm=Search&iid=99164557-abf9-47ed-9f94-a924ee6cb840.ETHGGZ2GYVCQJYY4.SEARCH&ppt=sp&ppn=sp&qH=78eea0d77bb576b3" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51E7m1kRJLL._SY741_.jpg" alt="Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Bohemian Style Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹459</span>
+                        <span>Flipkart: ₹359</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/boxiOLm" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/avantika-fashion-woven-kanjivaram-pure-silk-art-silk-saree/p/itm1d96fb041c504?pid=SARGH57WVFNYZKDY&lid=LSTSARGH57WVFNYZKDYISOL4Q&marketplace=FLIPKART&store=clo%2F8on%2Fzpd%2F9og&srno=b_3_110&otracker=browse&fm=Search&iid=4178c206-2477-4774-bb12-747464ba3999.SARGH57WVFNYZKDY.SEARCH&ppt=browse&ppn=browse" target="_blank">Flipkart</a>
+                    </div>
+                </div></div>
+     <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71RAzuchbbL._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Floral Summer Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹399</span>
+                        <span>Flipkart: ₹436</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/1yIO53W" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/leriya-fashion-women-a-line-beige-dress/p/itme8b7c30ba503f?pid=DREH5Z3KQ3SSPP8F&lid=LSTDREH5Z3KQ3SSPP8FGURLW5&marketplace=FLIPKART&q=Leriya+Fashion+Women+Dress+%7C+One+Piece+Dress+for+Women+%7C+Dresses+for+Women+%7C+Dress+for+Women+Stylish+%7C+Dress+%7C+One+Piece+Dress+for+Women+Long+%7C+Midi+Dress+for+Women&store=clo%2Fodx%2Fmaj%2Fjhy&srno=s_1_36&otracker=search&otracker1=search&fm=Search&iid=6c388a87-78cf-4a50-9475-aece5fdefc44.DREH5Z3KQ3SSPP8F.SEARCH&ppt=sp&ppn=sp&ssid=zg95xtnfsg0000001736238031787&qH=cae4539eab1f9e5f" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81tYgO6rjNL._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Floral Summer Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹399</span>
+                        <span>Flipkart: ₹329</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/9j7anKM" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/leriya-fashion-women-a-line-beige-dress/p/itme8b7c30ba503f?pid=DREH5Z3KQ3SSPP8F&lid=LSTDREH5Z3KQ3SSPP8FGURLW5&marketplace=FLIPKART&q=Leriya+Fashion+Women+Dress+%7C+One+Piece+Dress+for+Women+%7C+Dresses+for+Women+%7C+Dress+for+Women+Stylish+%7C+Dress+%7C+One+Piece+Dress+for+Women+Long+%7C+Midi+Dress+for+Women&store=clo%2Fodx%2Fmaj%2Fjhy&srno=s_1_36&otracker=search&otracker1=search&fm=Search&iid=6c388a87-78cf-4a50-9475-aece5fdefc44.DREH5Z3KQ3SSPP8F.SEARCH&ppt=sp&ppn=sp&ssid=zg95xtnfsg0000001736238031787&qH=cae4539eab1f9e5f" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/612+ZjkLFoL._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Women Regular High Rise Black Jeans</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹499</span>
+                        <span>Flipkart: ₹499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/i1aN83W" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/kotty-regular-women-black-jeans/p/itmbd2194b7512df?pid=JEAGFFMYRBZMST68&lid=LSTJEAGFFMYRBZMST688P9XVX&marketplace=FLIPKART&q=jeans+for+women&store=clo%2Fvua%2Fk58%2F4hp&srno=s_1_20&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&fm=search-autosuggest&iid=b7fe9660-e103-45e0-8397-2759950121d7.JEAGFFMYRBZMST68.SEARCH&ppt=sp&ppn=sp&ssid=u11ipin01s0000001736238407110&qH=1df1dc5bbc4009de" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
