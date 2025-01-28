@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Price Comparison</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: pink;
+            color: purple;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #4B0033;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300x250px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .product-prices {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .product-prices span:first-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .product-prices span:last-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .compare-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        .compare-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            background: #33CC33;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .compare-links a:hover {
+            background: pink;
+        }
+
+        footer {
+            text-align: center;
+            background: pink;
+            color: #C51077;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-prices span {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dress Price Comparison: Amazon vs Flipkart</h1>
+    </header>
+    <div class="container">
+        <h2>Compare the Best Dresses</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51GvSReOAGL.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3> Long Sleeve Linen Shirt </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹455</span>
+                        <span>Flipkart: ₹394</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/4ypWYql" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/dimmy-men-self-design-casual-dark-blue-shirt/p/itm3600f5eca1727?pid=SHTHFK9N36T4YPPY&lid=LSTSHTHFK9N36T4YPPYMCGBZ6&marketplace=FLIPKART&q=shirts%20for%20men&sattr[]=color&st=color&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51e-AMaJehL._SY741_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3> Regular Fit Solid Mandarin Collar Casual Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹349</span>
+                        <span>Flipkart: ₹299</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/c7xuuCR" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/tanip-men-solid-casual-white-shirt/p/itme5891bd87785e?pid=SHTGSY8RGX4U6VZN&lid=LSTSHTGSY8RGX4U6VZN1KUY3F&marketplace=FLIPKART&q=shirts+for+men&store=clo%2Fash%2Faxc%2Fmmk%2Fkp7&srno=s_1_26&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_ps&fm=organic&iid=10f1cf2a-1a7d-4d45-8261-e5432f4fb69b.SHTGSY8RGX4U6VZN.SEARCH&ppt=browse&ppn=browse&ssid=0h0qgz3vpc0000001737816886419&qH=34a66116dcbc8136" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61azo0Hi39L._SY741_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3>FILO HEVIS Regular Fit Striped Cotton Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹499</span>
+                        <span>Flipkart: ₹375</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/eGIsrCy" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/u-turn-men-striped-casual-grey-shirt/p/itmddca90093c074?pid=SHTH874GX7AGGC55&lid=LSTSHTH874GX7AGGC55P1H0KI&marketplace=FLIPKART&sattr[]=color&st=color" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71LfVkbJBHL._SY741_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3> Indian Garage Co Fit Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹524</span>
+                        <span>Flipkart: ₹1,098</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/0yHhoqd" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/flying-machine-men-checkered-casual-white-shirt/p/itm95b071aa862a2?pid=SHTH46ZFNGJMHZ8X&lid=LSTSHTH46ZFNGJMHZ8XENYBIJ&marketplace=FLIPKART&q=CHECKED+shirts+men&store=clo%2Fash%2Faxc%2Fmmk%2Fkp7&srno=s_8_319&otracker=search&otracker1=search&fm=Search&iid=709e5429-7368-4f55-a403-864ff623cf4f.SHTH46ZFNGJMHZ8X.SEARCH&ppt=sp&ppn=sp&qH=81d1442563535f65" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71-Tn86eSpL._SY741_.jpg" alt="Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>The Indian Garage Co Fit Shirt </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹524</span>
+                        <span>Flipkart: ₹525</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/75b2YWt" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/indian-garage-co-men-checkered-casual-cream-shirt/p/itm1ec3b26579fb1?pid=SHTGGNVKM37PBJXB&lid=LSTSHTGGNVKM37PBJXBICTJUH&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASHTGT3PWXHAZZGYN%3Bl%3ALSTSHTGT3PWXHAZZGYNKR5SZM%3Bpt%3App%3Buid%3A29012d98-db34-11ef-bb4b-d358f9850217%3B.SHTGGNVKM37PBJXB&ppt=pp&ppn=pp&ssid=s7kjhfi4b40000001737820074667&otracker=pp_reco_Similar%2BProducts_1_34.productCard.PMU_HORIZONTAL_The%2BIndian%2BGarage%2BCo.%2BMen%2BCheckered%2BCasual%2BCream%2BShirt_SHTGGNVKM37PBJXB_productRecommendation%2Fsimilar_0&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_1_NA_view-all&cid=SHTGGNVKM37PBJXB" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+     <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71-6mKaPQNL._SX679_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>MUFTI Slim Fit Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,319</span>
+                        <span>Flipkart: ₹1,200</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/0F16jeW" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/mufti-men-printed-casual-pink-shirt/p/itm9a0ea96c0ba30?pid=SHTGZSYXWKCZB9XA&lid=LSTSHTGZSYXWKCZB9XATSBOQW&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ASHTGZSYXWT38JEMG%3Bl%3ALSTSHTGZSYXWT38JEMGJYIALU%3Bpt%3App%3Buid%3A27193335-db3f-11ef-a87d-512b462895ae%3B.SHTGZSYXWKCZB9XA&ppt=pp&ppn=pp&ssid=fw0xix2nio0000001737824924159&otracker=pp_reco_Similar%2BProducts_12_MUFTI%2BMen%2BPrinted%2BCasual%2BPink%2BShirt_SHTGZSYXWKCZB9XA_productRecommendation%2Fsimilar_11&otracker1=pp_reco_NA_productRecommendation%2Fsimilar_Similar%2BProducts_DESKTOP_HORIZONTAL_productCard_cc_12_NA_view-all&cid=SHTGZSYXWKCZB9XA" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61lnT3TBSsL._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Colorblock Polo T-Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹590</span>
+                        <span>Flipkart: ₹699</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/bYIiGkg" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/adro-colorblock-men-polo-neck-yellow-t-shirt/p/itm065e574bf0cd5?pid=TSHH28N4XSDYNE3K&lid=LSTTSHH28N4XSDYNE3KYOKKSG&marketplace=FLIPKART&q=ADRO&store=search.flipkart.com&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=70a2f035-fbd3-4b5b-92ce-fef70729b5ab.TSHH28N4XSDYNE3K.SEARCH&ppt=sp&ppn=sp&ssid=4vgwmzdbs00000001737825638756&qH=3b1d07c41fd869c7" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61RFF-vCPjL._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Colorblock Polo T-Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,499</span>
+                        <span>Flipkart: ₹1,126</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/3KzxMuz" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/allen-solly-men-striped-formal-blue-shirt/p/itmf30f7efd7f509?pid=SHTH5HM2CDMFCRFA&lid=LSTSHTH5HM2CDMFCRFAMLIAMB&marketplace=FLIPKART&q=Allen+SollY&store=search.flipkart.com&srno=s_4_122&otracker=search&otracker1=search&fm=Search&iid=f13e4265-52bd-4115-a883-49a109d889ba.SHTH5HM2CDMFCRFA.SEARCH&ppt=sp&ppn=sp&ssid=yehk5gy8gg0000001737826140965&qH=a86bf669588a3cb8" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 9 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71aOmIub1CL._SX569_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Striped Polo T-Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹552</span>
+                        <span>Flipkart: ₹549</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/bFTxpQh" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/max-striped-men-polo-neck-beige-t-shirt/p/itm1646d8223144a?pid=TSHGWUF8TAE2X3UG&lid=LSTTSHGWUF8TAE2X3UGHS5U75&marketplace=FLIPKART&q=max+tshirts+men&store=clo%2Fash%2Fank%2Fedy&srno=s_1_30&otracker=AS_Query_OrganicAutoSuggest_4_3_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_4_3_na_na_na&fm=search-autosuggest&iid=fb5ed3da-d21e-45fe-999b-79ecdab80f0b.TSHGWUF8TAE2X3UG.SEARCH&ppt=sp&ppn=sp&ssid=jt44dwhnls0000001737826695546&qH=ddd92c657b8f1c89" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 10 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/619TkQ4Q99L._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Max Fit T-Shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹249</span>
+                        <span>Flipkart: ₹249</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/0JQtciJ" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/max-solid-men-round-neck-brown-t-shirt/p/itm674079f48311c?pid=TSHHYQBZHC5GDRU2&lid=LSTTSHHYQBZHC5GDRU2RHMCNJ&marketplace=FLIPKART&q=max+tshirts+men&store=clo%2Fash%2Fank%2Fedy&srno=s_3_103&otracker=AS_Query_OrganicAutoSuggest_4_3_na_na_na&otracker1=AS_Query_OrganicAutoSuggest_4_3_na_na_na&fm=search-autosuggest&iid=ce3e597b-ebef-476e-9107-0eae665108d1.TSHHYQBZHC5GDRU2.SEARCH&ppt=sp&ppn=sp&qH=ddd92c657b8f1c89" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 11 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61KZ35SdDpL._SY879_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>ADRO Fit Polo Tshirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹599</span>
+                        <span>Flipkart: ₹699</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/7jc9FmA" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/adro-colorblock-men-polo-neck-multicolor-t-shirt/p/itm265bb7e55c9d6?pid=TSHH28N4WXUQMEFS&lid=LSTTSHH28N4WXUQMEFST5Y4AK&marketplace=FLIPKART&q=ADRO&sattr[]=color&st=color" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 12 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51sMkOtsu0L._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                    <h3>Washed Spread Collar Casual shirt</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹799</span>
+                        <span>Flipkart: ₹799</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/2Ctg2Hq" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/7th-legion-men-washed-casual-blue-shirt/p/itm045ad249e8745?pid=SHTH4FDXEJG8YVEA&lid=LSTSHTH4FDXEJG8YVEADS63L6&marketplace=FLIPKART&q=double+pocket+denim+shirt+men&store=clo%2Fash%2Faxc%2Fmmk%2Fkp7&srno=s_5_179&otracker=search&otracker1=search&fm=Search&iid=042d2800-1f23-43dc-834f-1fe41fcfc728.SHTH4FDXEJG8YVEA.SEARCH&ppt=sp&ppn=sp&qH=a16bd773e3b081e2" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+    <footer>
+        &copy; 2024 Dress Price Comparison | Best Deals Online
+    </footer>
+</body>
+</html>
