@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Price Comparison</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: pink;
+            color: purple;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #4B0033;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 90%;
+            height: 800px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .product-prices {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .product-prices span:first-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .product-prices span:last-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .compare-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        .compare-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            background: #33CC33;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .compare-links a:hover {
+            background: pink;
+        }
+
+        footer {
+            text-align: center;
+            background: pink;
+            color: #C51077;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-prices span {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        h1>FURNITURES:AMAZON AND FLIPKART</h1>
+    </header>
+    <div class="container">
+        <h2>Compare The Best Worth</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/617UyLjOhQL._SX679_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>Swing Chair with Stand And Cushion</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹10,299</span>
+                        <span>Flipkart: ₹8,029</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://www.amazon.in/dp/B0C393KGDM?ref_=cm_sw_r_cp_ud_dp_1W7V8GY5TBNFNF8G20GD_4&newOGT=1" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/home-delight-swing-chair-stand-cushion-adult-iron-hammock/p/itma4fc80fba0f18?pid=HKSGRNEZCHFFNSFF&cmpid=product.share.pp&_refId=PP.9c2eb001-aefe-4ecd-aa12-ad15b261b22f.HKSGRNEZCHFFNSFF&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41iUeRkoGyL._SX679_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>THE PORTO Fabric King Size Bed </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹19,999</span>
+                        <span>Flipkart: ₹15,469</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/6JlOVbA" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/porto-fabric-king-size-bed-button-tufted-diamond-line-headboard-bedroom-engineered-wood/p/itmfa7eff84d30f5?pid=BDDGYYQZV5ZREQH4&cmpid=product.share.pp&_refId=PP.3204c4a5-a05d-4c59-9509-ce47de138da5.BDDGYYQZV5ZREQH4&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/91KMVrvPV2L._SX679_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3>9 Seater Large U-Shape Sectional Sofa </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹37,049</span>
+                        <span>Flipkart: ₹39,999</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/1lmPz8Z" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/comfort-couch-orbit-9-seater-large-upholstered-u-shape-sectional-sofa-set-fabric/p/itma911f624db7b7?pid=SOFGQ629C6UHHAA6&cmpid=product.share.pp&_refId=PP.ebc101a3-5e30-4dbc-a0e2-e9599845010e.SOFGQ629C6UHHAA6&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51r3KssyhkL.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>crafthub Solid Wood Chair</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹11,999</span>
+                        <span>Flipkart: ₹13,899</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://www.amazon.in/dp/B09ZJ8VYR9?ref_=cm_sw_r_cp_ud_dp_BYC1KQG7DG4AKCKNVQPD&newOGT=1" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/crafthub-solid-wood-1-seater-rocking-chairs/p/itm38fe931cef431?pid=RKCGPZBKN3VUHGSM&cmpid=product.share.pp&_refId=PP.388cc0e9-1a01-4f58-894e-ad5f2abad8e6.RKCGPZBKN3VUHGSM&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/612dgAUI6yL._SX679_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Patiofy Cotton Round Baby Swing </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹920</span>
+                        <span>Flipkart: ₹849</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/563uj79" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/patiofy-wooden-swing-chair-jhula-indoor-home-swing-adults-outdoor-cotton-large/p/itm7c01442b68095?pid=HKSGYVG6ADFYAUYB&cmpid=product.share.pp&_refId=PP.ece0c880-7e18-4a86-a49f-93e1e65b2f0a.HKSGYVG6ADFYAUYB&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+     <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71oyollwDkL._SL1500_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>Wood 3 Door Multi Utility Wardrobe  </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹9,945</span>
+                        <span>Flipkart: ₹11,699</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/78EBKw4" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/wooden-street-kayden-premium-engineered-wood-3-door-multi-utility-wardrobe-lock/p/itm99e355a29b45d?pid=WCLHY3YUAZGYB444&cmpid=product.share.pp&_refId=PP.5834ab05-83e9-4bfe-bfd3-970f5cf79d50.WCLHY3YUAZGYB444&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71khmsSjz8L._SX522_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>LIDBOX Study and Laptop Table</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹198</span>
+                        <span>Flipkart: ₹399</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/31aVleX" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/lidbox-study-table-laptop-engineered-wood/p/itm8cfbf8d20606d?pid=KDTGNGZF7T6DXJZC&cmpid=product.share.pp&_refId=PP.dd838daf-9ae2-4ce3-9a15-2d6c23afa5e9.KDTGNGZF7T6DXJZC&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61fn7m76SzL._SX679_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3> ShahQ TV Cabinet</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,699</span>
+                        <span>Flipkart: ₹1,320</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/35PhYoN" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/shahq-tv-cabinet-bedroom-32-inch-panel-engineered-wood-entertainment-unit/p/itm3cfbb898ea898?pid=TVUGRQA9TVDV3ZYG&cmpid=product.share.pp&_refId=PP.000ba496-6b8a-4fe7-bba7-a8c3bf3eaeac.TVUGRQA9TVDV3ZYG&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71qa-HDamCL._SX679_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Wood Computer Desk</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹2,199</span>
+                        <span>Flipkart: ₹2,199</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/6nU9drA" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/purple-furniture-elite-engineered-wood-computer-desk/p/itm12047f23b4b75?pid=CPTGFTRBXVMGMRBY&cmpid=product.share.pp&_refId=PP.1a94e85a-82b5-43b8-8217-63ebf372898a.CPTGFTRBXVMGMRBY&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/31GycQEbgLL.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3> WOOD MINE Bedside Table</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹949</span>
+                        <span>Flipkart: ₹876</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/1ZJDH61" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/wood-mine-engineered-bedside-table/p/itmd0f6f4dcc7166?pid=SITGMECHAA73PWPD&cmpid=product.share.pp&_refId=PP.111af0df-b88a-4e20-8c77-48bcb890803f.SITGMECHAA73PWPD&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+     <!-- Product 11 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71WFBkm3TrL._SX679_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>TV Cabinet Engineered Wood </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹3,199</span>
+                        <span>Flipkart: ₹1,899</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/6ix9sor" target="_blank">Amazon</a>
+                        <a href="https://flipkart.com/snq-engineered-wood-wall-mount-tv-unit-tv-stand-tv-cabinet-entertainment-unit/p/itm5c408ab14bafb?pid=TVUGXWYES3QE9MCD&cmpid=product.share.pp&_refId=PP.38d15c79-9563-42a8-be0c-bbd885665a66.TVUGXWYES3QE9MCD&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81A-0R5PbGL._SL1500_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>beaatho Oxford Executive chair </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹7,399</span>
+                        <span>Flipkart: ₹7,599</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/a3R8YoK" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/beaatho-oxford-executive-chair-leatherette-office/p/itmc13838dfa243c?pid=OSCH29USTCR3UZNA&cmpid=product.share.pp&_refId=PP.0d1bca53-1273-4e3f-808b-7f33c5e3527b.OSCH29USTCR3UZNA&_appId=WA"_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/613Yym-crrL._SL1500_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3> 4 Seater Dining Set</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹19,031</span>
+                        <span>Flipkart: ₹16,799</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://www.amazon.in/dp/B0CFH9TG1Y?ref_=cm_sw_r_cp_ud_dp_68FHQ5ZDWQGC45ZVXCMK_1&newOGT=1" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/custom-decor-solid-wood-4-seater-dining-set/p/itm949a24451be56?pid=DISG2C7WAP8KR4UE&cmpid=product.share.pp&_refId=PP.f3f1d75b-13f3-48a8-b164-56b3c8700d4a.DISG2C7WAP8KR4UE&_appId=WA" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/512TvZuRgTL.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3> ShahQ TV Cabinet</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹899</span>
+                        <span>Flipkart: ₹1,999</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/8E8ubZi" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/star-xxxl-footstool-cushion-combo-bean-bag-chair-filling/p/itm6150009018c59?pid=BEBH4B8RFHGFRGYY&cmpid=product.share.pp&_refId=PP.d66d98ac-0f5d-49ee-a9c1-d97412b8c014.BEBH4B8RFHGFRGYY&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51u5mwTWimL.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>PALAK Plastic Free Standing Chest of Drawers </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,499</span>
+                        <span>Flipkart: ₹999</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/hOVXcZi" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/palak-plastic-free-standing-chest-drawers/p/itm83225abe83803?pid=CSDHFYHBWG8QGSHJ&cmpid=product.share.pp&_refId=PP.0f231a90-4de2-4547-8499-34cccdce29de.CSDHFYHBWG8QGSHJ&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61Rch+KEX9L._SX679_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3> ONEDEEP Dressing Table</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,999</span>
+                        <span>Flipkart: ₹1,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/aI9FufT" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/onedeep-engineered-wood-dressing-table/p/itme1a8053ed7c76?pid=DTBGMH7UF2ZZ2EXS&lid=LSTDTBGMH7UF2ZZ2EXS7MI4WS&marketplace=FLIPKART&fm=productRecommendation%2Fsimilar&iid=R%3As%3Bp%3ADTBH3ZZQ5CYSB3AP%3Bl%3ALSTDTBH3ZZQ5CYSB3APADOEGP%3Bpt%3App%3Buid%3A01b92411-dd99-11ef-97e4-fd8dc3894508%3B.DTBGMH7UF2ZZ2EXS&ppt=pp&ppn=pp&ssid=vr0hkqtqkg0000001738083335074&otracker=pp_reco_Similar%2BProducts_2_39.productCard.PMU_HORIZONTAL_ONEDEEP%2BEngineered%2BWood%2BDressing%2BTable_DTBGMH7UF2ZZ2EXS_productRecommendation%2Fsimilar_1&otracker1=pp_reco_PINNED_productRecommendation%2Fsimilar_Similar%2BProducts_GRID_productCard_cc_2_NA_view-all&cid=DTBGMH7UF2ZZ2EXS" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Dress Price Comparison | Best Deals Online
+    </footer>
+</body>
+</html>

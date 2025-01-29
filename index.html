@@ -90,31 +90,58 @@
         body {
             font-family: Arial, sans-serif;
         }
-        .slider {
-            position: relative;
-            width: 100%;
-            max-width: 1200px;
-            margin: 20px auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .slides {
-            display: flex;
-            width: 300%;
-            animation: slide 8s infinite;
-        }
-        .slides img {
-            width: 100%;
-            height: 400px;
-            object-fit: cover;
-        }
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            33% { transform: translateX(-100%); }
-            66% { transform: translateX(-200%); }
-            100% { transform: translateX(0); }
-        }
+         /* Slider styles */
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1200px;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .slides {
+      display: flex;
+      width: 500%; /* 5 slides */
+      animation: slide 10s infinite; /* 10s = 5 slides x 2s per slide */
+    }
+    
+    .slides img {
+      width: 20%; /* 100% / 5 slides */
+      height: 400px;
+      object-fit: cover;
+    }
+    
+    @keyframes slide {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-20%);
+      }
+      45% {
+        transform: translateX(-20%);
+      }
+      50% {
+        transform: translateX(-40%);
+      }
+      70% {
+        transform: translateX(-40%);
+      }
+      75% {
+        transform: translateX(-60%);
+      }
+      95% {
+        transform: translateX(-60%);
+      }
+      100% {
+        transform: translateX(-80%);
+      }
+    }
         .controls {
             position: absolute;
             top: 50%;
@@ -136,11 +163,10 @@
 <body>
     <div class="slider">
         <div class="slides">
-            <img src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/3a7ea336e89148f6.jpeg?q=20" alt="Slide 1">
-            <img src="https://images-static.nykaa.com/creatives/2060b3cb-618f-4f4d-83d8-74e8e4497e9d/default.jpg?tr=cm-pad_resize,w-900" alt="Slide 2">
+            <img src="https://media6.ppl-media.com/tr:w-1280,c-at_max,pr-true,dpr-2/mediafiles/ecomm/misc/1738087136_bau-glowing_skin_bonzana_2596x836-min.jpeg" alt="Slide 1">
+            <img src="https://images-static.nykaa.com/uploads/1bdcce4f-ead2-4cca-9607-635b336610ec.gif" alt="Slide 2">
             <img src="https://images-static.nykaa.com/uploads/0a9e84d4-214f-4be7-ba6e-4b7ba56039d6.jpg?tr=cm-pad_resize,w-1800" alt="Slide 3">
             <img src="https://images-static.nykaa.com/uploads/40c8f669-3cb1-48c7-ac1a-9510839c442c.jpg?tr=cm-pad_resize,w-1800" alt="Slide 4">
-            <img scr="https://images-static.nykaa.com/creatives/e412454c-b9f7-4c0d-a1c6-6f486c74c8f5/default.jpg?tr=cm-pad_resize,w-900" alt="Slide 5">
         </div>
     </div>
     <div class="search-container">
@@ -171,7 +197,7 @@
         </div>
         <!-- Row 2 -->
         <div class="category">
-            <img src="https://m.media-amazon.com/images/I/61ZByRtyAUL._SY741_.jpg"alt="KIDS">
+            <img src="https://littlemuffet.com/cdn/shop/files/Twinning_Girls_Boys_Set.png?v=1710750967&width=540"alt="KIDS">
             <div>KIDS</div>
         </div>
         <div class="category">
@@ -180,11 +206,15 @@
         </div>
         <!-- Row 3 -->
         <div class="category">
+            <a href="electronics.html">
             <img src="https://m.media-amazon.com/images/I/71T5NVOgbpL._SX679_.jpg" alt="Phone">
+            </a>
             <div>ELECTRONICS</div>
         </div>
         <div class="category">
+            <a href="furnitures.html">
             <img src="https://m.media-amazon.com/images/I/61IHi71wKNL._SX679_.jpg" alt="furniture">
+            </a>
             <div>FURNITURES</div>
         </div>
     </div>
