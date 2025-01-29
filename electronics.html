@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Price Comparison</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: pink;
+            color: purple;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #4B0033;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns:1fr 1fr; 
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 90%;
+            height: 800;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .product-prices {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .product-prices span:first-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .product-prices span:last-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .compare-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        .compare-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            background: #33CC33;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .compare-links a:hover {
+            background: pink;
+        }
+
+        footer {
+            text-align: center;
+            background: pink;
+            color: #C51077;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-prices span {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ELECTRONICS:AMAZON AND FLIPKART</h1>
+    </header>
+    <div class="container">
+        <h2>Compare The Best Worth</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/711kX064JHL._SX679_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>realme 12x 5G</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹12,720</span>
+                        <span>Flipkart: ₹12,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/ejw9rq7" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/realme-12x-5g-twilight-purple-128-gb/p/itmaa3401e5370b5?pid=MOBGYQ6BMYWCAZEC&cmpid=product.share.pp&_refId=PP.02d6f46f-1b5a-4ca5-b2ce-4292ad5c5c29.MOBGYQ6BMYWCAZEC&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71EB3mVcc3L._SX679_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>Automatic Digital Bp Monitor Machine</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,999</span>
+                        <span>Flipkart: ₹1,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/jiWZeuq" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/dr-trust-goldline-talking-guidance-3-color-hypertension-alert-lcd-indicator-power-adapter-included-blood-pressure-monitor-usa-bp/p/itmerahxdx7wrnda?pid=BPMERAHXYSHY6KHZ&cmpid=product.share.pp&_refId=PP.92140b87-7771-42a7-b51c-13b807171000.BPMERAHXYSHY6KHZ&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/711E5HU0YxL._SX679_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3>realme TechLife Ear Headphone </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹3,869</span>
+                        <span>Flipkart: ₹4,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/j6JEvCV" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/realme-techlife-studio-h1-43db-anc-hi-res-audio-40mm-driver-70hrs-playback-bluetooth/p/itm6d0cab8184afe?pid=ACCH5FH5TVSYRQJ9&cmpid=product.share.pp&_refId=PP.d61bd4d1-c3e8-4102-8d74-0db7ee53dae6.ACCH5FH5TVSYRQJ9&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61RNweTg0AL._SX679_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Fujifilm Instax Mini 12 Instant Camera </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹8,999</span>
+                        <span>Flipkart: ₹7,498</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/iJ7WoeI" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/fujifilm-instax-mini-12-instant-camera/p/itm0fe5ccc2e1583?pid=INAGZK4EVGGZH5GK&cmpid=product.share.pp&_refId=PP.06e7d738-3d02-4ea9-a85b-11dfc6a20c40.INAGZK4EVGGZH5GK&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51lX5oZbtQL._SX679_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Amazon Fire TV Stick with Alexa Voice Remote </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹ 4,499</span>
+                        <span>Flipkart: ₹ 3,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/9xwgFBu" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/firetv-stick-lite-all-new-alexa-voice-remote-lite-hd-media-streaming-device/p/itmb355cbf181fb6?pid=SELH4MGMZBGRZGHG&cmpid=product.share.pp&_refId=PP.5f50009a-d98e-4838-af17-9343a623f5f1.SELH4MGMZBGRZGHG&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+     <!-- Product 6 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51nFMadpgtL._SX679_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>AMYTEL Mini Power Bank</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹599</span>
+                        <span>Flipkart: ₹460</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/4yX5RAf" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/amytel-10000-mah-25-w-mini-pocket-size-power-bank/p/itme4d86be8d6296?pid=PWBH49W4JCHNJTCR&cmpid=product.share.pp&_refId=PP.049f43da-4ae4-4e52-90f9-d29e109dfe72.PWBH49W4JCHNJTCR&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/31uD3iVVqEL._SX679_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>Xiaomi Power Bank</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹1,289</span>
+                        <span>Flipkart: ₹1,299</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/6KSAohu" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/mi-10000-mah-22-5-w-power-bank/p/itmcc5abfaebeba7?pid=PWBH2GHHKQT5MKJF&cmpid=product.share.pp&_refId=PP.c1e7c008-e4f6-4b54-8b84-91ffa99aea8f.PWBH2GHHKQT5MKJF&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61KIm6S-s+L._SX522_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3> Boat Wireless with Mic Earphones</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹899</span>
+                        <span>Flipkart: ₹1,099</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/akPQozm" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/boat-rockerz-110-40-hrs-playback-enx-technology-beast-mode-asap-charge-bluetooth/p/itm1707c9f88f559?pid=ACCGS9ZMGQZH4FZF&cmpid=product.share.pp&_refId=PP.c40e8258-23d5-4ee1-a470-40d06e28a416.ACCGS9ZMGQZH4FZF&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81tmCrtiRgL._SL1500_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Lenovo LOQ Intel Core Laptop </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹76,490</span>
+                        <span>Flipkart: ₹73,990</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/jkoCHbw" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/lenovo-loq-intel-core-i5-12th-gen-12450hx-16-gb-512-gb-ssd-windows-11-home-6-graphics-nvidia-geforce-rtx-4050-15iax9-gaming-laptop/p/itme3e94a3f73f71?pid=COMHYXVABRPB2XQ5&cmpid=product.share.pp&_refId=PP.7f537a6d-4658-4b52-8ffd-96b396f20efc.COMHYXVABRPB2XQ5&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61W9ZVjqDXL._SX679_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Xbox Series X/S Wireless Controller</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹5,299</span>
+                        <span>Flipkart: ₹4,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/1oI0cn8" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/microsoft-wireless-controller-bluetooth-gamepad/p/itmbf5f181e51cbe?pid=ACCFZZSJHNSSYUGM&cmpid=product.share.pp&_refId=PP.29299f64-4f94-468f-9c37-8388950a670a.ACCFZZSJHNSSYUGM&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+     <!-- Product 11 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51EQbHyFlbL._SX522_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>Neutra Hybrid HR Watch </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹899</span>
+                        <span>Flipkart: ₹1,999</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/dwAakRj" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/boult-crownr-pro-2-1-43-hd-amoled-bt-calling-zinc-alloy-frame-ip67-spo2-tracking-smartwatch/p/itm6f75591c657cc?pid=SMWH2ZG7TZQS7RKH&cmpid=product.share.pp&_refId=PP.bdee8eb2-bb41-41e9-9fbb-e1cfcb37f016.SMWH2ZG7TZQS7RKH&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/512jrg8-68L._SX522_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3> Boat Ear Buds Wireless Earphones  </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹998</span>
+                        <span>Flipkart: ₹899</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/eDMkcOt" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/boat-airdopes-alpha-35-hrs-playback-13mm-drivers-dual-mics-enx-beast-mode-bluetooth/p/itm1181f915b81ec?pid=ACCGP2HJA3HKHTF4&cmpid=product.share.pp&_refId=PP.da0c18d8-6d0e-4add-8df3-6045e4cf55cc.ACCGP2HJA3HKHTF4&_appId=CL" target=_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/91mytuCuZ0L._SX522_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3> Canon Digital SLR Camera</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹35,690</span>
+                        <span>Flipkart: ₹33,490</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://www.amazon.in/dp/B0CFH9TG1Y?ref_=cm_sw_r_cp_ud_dp_68FHQ5ZDWQGC45ZVXCMK_1&newOGT=1" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/canon-eos-3000d-dslr-camera-1-body-18-55-mm-lens/p/itm1f4ad2d1ba230?pid=CAMF3DHJURPEMNRN&cmpid=product.share.pp&_refId=PP.bb872038-d0fa-4f57-b4b7-896b89571a58.CAMF3DHJURPEMNRN&_appId=WA" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71b+AxjjxFL._SX522_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3> Hero XOOM (LX) Scooter</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹70,984</span>
+                        <span>Flipkart: ₹72,284</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/58oA9EE" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/hero-xoom-lx-booking-ex-showroom-price/p/itm7dabe69f3856e?pid=SMDGZKG4UGGBFUAP&lid=LSTSMDGZKG4UGGBFUAPQ8SNEE&marketplace=FLIPKART&fm=factBasedRecommendation%2FrecentlyViewed&iid=R%3Arv%3Bpt%3App%3Buid%3A1d6094e1-de30-11ef-bd54-e9a60dd5cbf6%3B.SMDGZKG4UGGBFUAP&ppt=pp&ppn=pp&ssid=v7zj9ebznk0000001738148200291&otracker=pp_reco_Recently%2BViewed_1_40.productCard.RECENTLY_VIEWED_Hero%2BXOOM%2B%2528LX%2529%2BBooking%2Bfor%2BEx-Showroom%2BPrice_SMDGZKG4UGGBFUAP_factBasedRecommendation%2FrecentlyViewed_0&otracker1=pp_reco_PINNED_factBasedRecommendation%2FrecentlyViewed_Recently%2BViewed_DESKTOP_HORIZONTAL_productCard_cc_1_NA_view-all&cid=SMDGZKG4UGGBFUAP" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/31PUbaA+h4L._SY300_SX300_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Samsung Galaxy Tab, Pen in-Box </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹34,999</span>
+                        <span>Flipkart: ₹46,999</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/cvB7if7" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/samsung-galaxy-tab-s9-fe-8-gb-ram-128-rom-12-4-inch-wi-fi-only-tablet-lavender/p/itm853bdc5afad40?pid=TABGTDU7ZHJFNUEZ&cmpid=product.share.pp&_refId=PP.ddb95075-247c-40d4-889e-4d1fd428578e.TABGTDU7ZHJFNUEZ&_appId=WA" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/610XNaOCsvL._SX522_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Jeep Battery Car for Kids</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹8,899</span>
+                        <span>Flipkart: ₹9,299</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/9eMy2Ib" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/oh-baby-888-jeep-1-8yrs-battery-ride-car-operated/p/itmf2e02e88ca681?pid=EROG4R46ZHFHK9EE&lid=LSTEROG4R46ZHFHK9EE4HMTP3&marketplace=FLIPKART&q=electric+baby+car&store=tng%2F2cz%2Fyth&srno=s_1_22&otracker=search&otracker1=search&fm=Search&iid=05142532-acac-4456-b827-d2cd4986fdb6.EROG4R46ZHFHK9EE.SEARCH&ppt=sp&ppn=sp&ssid=qv39ld7fsg0000001738148959619&qH=8719b0f422973b95" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Dress Price Comparison | Best Deals Online
+    </footer>
+</body>
+</html>
