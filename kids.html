@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress Price Comparison</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: pink;
+            color: purple;
+            text-align: center;
+            padding: 20px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #4B0033;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Product grid styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            gap: 20px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 90%;
+            height: 800px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-info h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+
+        .product-prices {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .product-prices span:first-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .product-prices span:last-child {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .compare-links {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 15px;
+        }
+
+        .compare-links a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 0.9rem;
+            color: #fff;
+            background: #33CC33;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .compare-links a:hover {
+            background: pink;
+        }
+
+        footer {
+            text-align: center;
+            background: pink;
+            color: #C51077;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .product-prices span {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KIDS:AMAZON AND FLIPKART</h1>
+    </header>
+    <div class="container">
+        <h2>Compare The Best Worth</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/31LcuVkYJyL.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>Girls Knee Length Dress Frock</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹399</span>
+                        <span>Flipkart: ₹299</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/2Y3Qh6A" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/amfashion-girls-midi-knee-length-casual-dress/p/itm99523bae28a0e?pid=KDEGWXZV3ME9ZFSE&cmpid=product.share.pp&_refId=PP.95295b7e-c845-4d5b-a37e-d09bb7ba3e4f.KDEGWXZV3ME9ZFSE&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71Hk+-ghDcL._SY741_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>Girls Gown Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹449</span>
+                        <span>Flipkart: ₹494</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/0bcxerg" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/ayub-fashion-girls-maxi-full-length-party-dress/p/itme769a4def41ec?pid=KDEGGJWAP2T7RSYN&cmpid=product.share.pp&_refId=PP.b7aeaa8b-af3c-4380-8f82-adf64d30e287.KDEGGJWAP2T7RSYN&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71Wth2-MjQL._SY741_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3>Fashion Dream Girls Stripe Ruffle Hem Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹479</span>
+                        <span>Flipkart: ₹489</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/cKOE1tV" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/fashion-dream-girls-below-knee-casual-dress/p/itmb544c4dba5c3a?pid=KDEG82FEBQPQN5QV&cmpid=product.share.pp&_refId=PP.1ec66b5a-449e-4397-b54b-6ffddb93d1d2.KDEG82FEBQPQN5QV&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71jYCwyrNbL._SY741_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Girls Below Knee Festive Dress </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹399</span>
+                        <span>Flipkart: ₹270</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/iSKhvHf" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/sk-jj-dresses-girls-below-knee-festive-wedding-dress/p/itm86ca73cebdcf8?pid=KDEGYMF2YSTY9HPZ&cmpid=product.share.pp&_refId=PP.1b1eede9-2130-457b-b427-6e5b246651cd.KDEGYMF2YSTY9HPZ&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61MTRNNL+3L._SY741_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Girls Midi/Knee Length Casual Dress  </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹ 429</span>
+                        <span>Flipkart: ₹ 470</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/bJcCB0I" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/jiyan-fashion-world-girls-midi-knee-length-casual-dress/p/itm1c761ad459beb?pid=KDEGT2J32TCZBDNR&cmpid=product.share.pp&_refId=PP.ea824d9e-b7ae-41bb-855c-d3b7bf238394.KDEGT2J32TCZBDNR&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+          <!-- Product 6 -->
+          <div class="product-card">
+               <img src="https://m.media-amazon.com/images/I/519b01Gxl4L._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>Boys Party Waistcoat Pant, Shirt </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹854</span>
+                        <span>Flipkart: ₹1,499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/bj5UIzh" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/zolario-boys-party-festive-waistcoat-pant-shirt/p/itm8b84edc072ec4?pid=KPBGQFZFDNYZMAHT&cmpid=product.share.pp&_refId=PP.d6b56f8d-928f-47ad-8dcf-e42bd3c5783a.KPBGQFZFDNYZMAHT&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51zcy45lwCL._SY741_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>Boys Casual T-shirt Track Pan</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹499</span>
+                        <span>Flipkart: ₹474</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/9iaL9S0" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/rudra-enterprise-boys-girls-casual-t-shirt-track-pants/p/itme0967f7166940?pid=KPBH6MC3HPN5VJDU&cmpid=product.share.pp&_refId=PP.bd73495a-cc93-4bbb-800b-7a249443a130.KPBH6MC3HPN5VJDU&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/91gayQd2vWL._SY741_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3>Baby Boys Casual T-shirt Pant </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹499</span>
+                        <span>Flipkart: ₹439</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/9pR4eCO" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/emblica-baby-boys-casual-t-shirt-pant/p/itm2297e88d23a85?pid=KPBGUXD47CQBRTUU&cmpid=product.share.pp&_refId=PP.f593c91e-3072-479e-825c-3d93bafc3929.KPBGUXD47CQBRTUU&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/4108BJMa2qL._SX569_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Boys Party Shirt Dungaree, Bow Tie </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹399</span>
+                        <span>Flipkart: ₹688</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/b8V36aP" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/jekeshvi-boys-girls-party-festive-shirt-dungaree-bow-tie/p/itm9675eae101092?pid=KPBH7ZFRF2S8WDFJ&cmpid=product.share.pp&_refId=PP.b17cbb95-90cb-4fbd-9ea7-dcae8f27f244.KPBH7ZFRF2S8WDFJ&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/717GKxLpOJL._SY741_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Boys & Girls Casual T-shirt Shorts  </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹499</span>
+                        <span>Flipkart: ₹444</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/8QWqd26" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/fly-boys-girls-casual-t-shirt-shorts/p/itmdc4ec1abc2098?pid=KPBH5GMUNZNQUYMF&cmpid=product.share.pp&_refId=PP.4a3f0cf8-31b1-44ac-a0d9-34c01a0f6c5a.KPBH5GMUNZNQUYMF&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+     <!-- Product 11 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/710wW6lqhjL._SY741_.jpg" alt="Floral Summer Dress">
+                <div class="product-info">
+                  <h3>Boys Casual Sweatshirt Pyjama </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹899</span>
+                        <span>Flipkart: ₹674</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/2dYyMyq" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/fly-boys-girls-casual-sweatshirt-pyjama/p/itmbecf62bab00de?pid=KPBH68YGDUAHJY3M&cmpid=product.share.pp&_refId=PP.5d8c4d32-ada6-47a0-8842-0ba87af7b5bf.KPBH68YGDUAHJY3M&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 12 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/710Y7rYNr-L._SY741_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3> Boys & Girls Casual Sweatshirt Pyjama </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹979</span>
+                        <span>Flipkart: ₹674</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/cRo5yx1" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/fly-boys-girls-casual-sweatshirt-pyjama/p/itm5f73f3aec0746?pid=KPBH68YGWZPA9GNH&cmpid=product.share.pp&_refId=PP.dff2d018-0efc-4da3-9e73-f37af7b88c60.KPBH68YGWZPA9GNH&_appId=CL" target=_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 13 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51ovEYMdDKL._SX679_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>ONE SKY T Shirt for Boys & Girls</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹533</span>
+                        <span>Flipkart: ₹529</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/cbWbmZF" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/one-sky-girls-printed-cotton-blend-regular-t-shirt/p/itm84571f9ad2fdb?pid=KTBGQQ22ZHJZMU9T&cmpid=product.share.pp&_refId=PP.182a9e20-57d6-4312-968e-f5906183943c.KTBGQQ22ZHJZMU9T&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 14 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/71dFzbhYdfL._SX679_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3> Boys Casual Sweatshirt Sweatpant</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹649</span>
+                        <span>Flipkart: ₹499</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/gDsdbUW" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/ariel-boys-girls-casual-sweatshirt-sweatpant/p/itm06dda13b1745a?pid=KPBGVZFWTZYYSKHW&lid=LSTKPBGVZFWTZYYSKHWJZTYPV&marketplace=FLIPKART&sattr[]=color&st=color" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 15 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61AW1YrD97L._SY741_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Boys Casual Top Shorts</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹214</span>
+                        <span>Flipkart: ₹170</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/egrhKiV" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/new-gen-boys-girls-casual-top-shorts/p/itmc4536da1e848f?pid=KPBGBZKNSRCSGZYZ&cmpid=product.share.pp&_refId=PP.b8bd3b0f-8e55-4b26-818c-8eea86f822ac.KPBGBZKNSRCSGZYZ&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41PZmZpRBoL._SY741_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Girls Calf Length Casual Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹370</span>
+                        <span>Flipkart: ₹246</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/aXvOrMG" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/newsifa-girls-calf-length-casual-dress/p/itm4c136717d449b?pid=KDEGGDXD8ZWZQHHY&lid=LSTKDEGGDXD8ZWZQHHYUWUQYO&marketplace=FLIPKART&sattr[]=color&st=color" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+        <!-- Product 17 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/61IbjbM2XjL._SY741_.jpg" alt="Elegant Evening Gown">
+                <div class="product-info">
+                    <h3>Fashion Dream Girl’s Knee Length Embroidered Dress</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹439</span>
+                        <span>Flipkart: ₹699</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/5Wu88V5" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/fashion-dream-girls-midi-knee-length-party-dress/p/itm369683671b0a8?pid=KDEGBAG5BNPDYXJC&cmpid=product.share.pp&_refId=PP.cdc295fc-794b-47e9-8bf3-55ee4b665525.KDEGBAG5BNPDYXJC&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 18 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/81qNqpZ9hPL._SX679_.jpg" alt="Casual Day Dress">
+                <div class="product-info">
+                    <h3> Girl's Traditional Ethnic Wear</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹899</span>
+                        <span>Flipkart: ₹882</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/99FYvPN" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/amba-collection-boutique-baby-girls-midi-knee-length-festive-wedding-dress/p/itm6a2709254c9d3?pid=KDEGJ8HYQSNGUN3D&cmpid=product.share.pp&_refId=PP.016a3b1c-1486-485d-8ef7-74cb31433c9c.KDEGJ8HYQSNGUN3D&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 19 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/41oWuvqFBZL._SY679_.jpg" alt="Formal Office Dress">
+                <div class="product-info">
+                    <h3>Girls Midi/Knee Length Casual Dress  </h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹440</span>
+                        <span>Flipkart: ₹500</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/egrhKiV" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/jiyan-fashion-world-girls-midi-knee-length-casual-dress/p/itmf4845d8b678a7?pid=KDEGWCDGEAMMAVSE&cmpid=product.share.pp&_refId=PP.56be77b1-bdce-49e3-b4e3-95b2e58ca1f9.KDEGWCDGEAMMAVSE&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 20 -->
+            <div class="product-card">
+                <img src="https://m.media-amazon.com/images/I/51F6CnspTNL._SY679_.jpg"Bohemian Style Dress">
+                <div class="product-info">
+                    <h3>Boys & Girls Casual Sweatshirt Track Pants</h3>
+                    <div class="product-prices">
+                        <span>Amazon: ₹849</span>
+                        <span>Flipkart: ₹699</span>
+                    </div>
+                    <div class="compare-links">
+                        <a href="https://amzn.in/d/aJpQl9q" target="_blank">Amazon</a>
+                        <a href="https://www.flipkart.com/mars-infiniti-boys-girls-casual-sweatshirt-track-pants/p/itma42ab5e0cbafb?pid=KPBH4GSZW63E2NHU&cmpid=product.share.pp&_refId=PP.6ae4eb8e-45ae-4551-9af1-f5c543a2af3a.KPBH4GSZW63E2NHU&_appId=CL" target="_blank">Flipkart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
