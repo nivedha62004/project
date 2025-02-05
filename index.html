@@ -175,11 +175,30 @@
             <option value="women">Women</option>
             <option value="men">Men</option>
             <option value="bracelet">kids</option>
-            <option value="kids">cosmetics</option>
-           <option value="phone">Phone</option>
-           <option value="phone">furniture</option>
+            <option value="kids">Cosmetics</option>
+           <option value="phone">Electronics</option>
+           <option value="phone">Furniture</option>
         </select>
     </div>
+    <script>
+        const searchSelect = document.querySelector('.search-bar');
+
+        searchSelect.addEventListener('change', (e) => {
+          const selectedCategory = e.target.value;
+          const categoryPages = {
+            women: 'womenscloth.html',
+            men: 'menscloth.html',
+            kids: 'cosmetics.html',
+            cosmetics: 'cosmetics.html',
+            electronics: 'electronics.html',
+            furniture: 'furnitures.html',
+          };
+      
+          if (selectedCategory in categoryPages) {
+            window.location.href = categoryPages[selectedCategory];
+          }
+        });
+    </script>
     
     <div class="category-container">
         <!-- Row 1 -->
@@ -222,3 +241,4 @@
             <div>FURNITURES</div>
         </div>
     </div>
+   
